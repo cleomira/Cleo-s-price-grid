@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+html {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  /* background-color: rgb(219, 224, 224); */
+}
+
+main {
+  background-color: var(--lightGray);
+  place-content: center;
+  padding: 50px 10px;
+  /* height: 100vh; */
+  display: grid;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.container {
+  width: 100%;
+  /* background-color: var(--white); */
+  padding: 0 10px;
+  /* display: grid; */
+  max-width: 700px;
+  /* height: 50vh;
+  align-items: center;
+  justify-content: center;  */
+}
+
+.introduction {
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 25px 17px;
+}
+
+.introduction h1 {
+  color: var(--cyan);
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.introduction h3 {
+  color: var(--brightYellow);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.introduction p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--grayishBlue);
+}
+
+.subscription {
+  background-color: var(--cyan);
+  padding: 25px 17px;
+  width: 100%;
+}
+
+.subscription h2 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 18px;
+  font-family: "Karla", sans-serif;
+}
+
+.subscription h3 span {
+  color: var(--lightGray);
+  font-weight: 400px;
+  font-size: 16px;
+  
+}
+
+.subscription h3 {
+  display: flex;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.subscription p {
+  font-size: 15px;
+  color: rgb(231, 245, 245);
+  margin-bottom: 15px;
+}
+
+.subscription button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: var(--brightYellow);
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+}
+
+.lastDiv {
+  background-color: rgb(87, 204, 204);
+  padding: 25px 17px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 100%;
+}
+
+.lastDiv h2 {
+  color: white;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.lastDiv p {
+  padding-right: 60px;
+  line-height: 1.5;
+  color: var(--lightGray);
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    height: 100vh;
+  }
+
+  .container{
+    padding-left: 20px;
+  }
+
+  .introduction{
+    padding-left: 35px;
+    padding-right: 30px;
+  }
+
+  .introduction p{
+    font-size: 18px;
+  }
+
+  .subscription{
+    border-bottom-left-radius: 8px;
+    padding-left: 35px;
+    padding-right: 30px;
+  }
+
+  .subscription button{
+    margin-top: 30px;
+    width: 85%;
+    padding: 15px;
+  }
+
+  .lastDiv {
+    border-bottom-left-radius: 0px;
+    padding-left: 35px;
+    padding-right: 30px;
+  }
+
+  .blueDiv {
+    display: flex;
+  }
+}
